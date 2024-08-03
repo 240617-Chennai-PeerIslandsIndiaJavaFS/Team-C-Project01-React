@@ -1,0 +1,65 @@
+.create-client-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #e3e6e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-client-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.create-client-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-client-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.create-client-input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.create-client-button {
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-client-button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .create-client-container {
+        padding: 15px;
+    }
+    
+    .create-client-title {
+        font-size: 24px;
+    }
+    
+    .create-client-input {
+        font-size: 14px;
+    }
+    
+    .create-client-button {
+        font-size: 14px;
+    }
+}

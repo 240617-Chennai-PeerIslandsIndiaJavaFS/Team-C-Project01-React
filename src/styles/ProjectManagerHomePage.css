@@ -1,0 +1,118 @@
+.pm-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);  
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.pm-home-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffd700;
+    text-align: center;
+}
+
+.pm-menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(186, 162, 162, 0.5); 
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pm-menu-item {
+    margin-bottom: 1rem;
+}
+
+.pm-menu-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pm-menu-button:hover {
+    background-color: rgba(0, 86, 179, 0.8);
+    transform: scale(1.05);
+}
+
+#logoutButton {
+    background-color: rgb(240, 9, 9);
+}
+
+#logoutButton:hover {
+    background-color: rgba(230, 0, 0, 0.8);
+}
+
+@media (max-width: 767px) { 
+    .pm-home-container {
+        padding: 1rem;
+    }
+
+    .pm-home-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .pm-menu {
+        padding: 1.5rem;
+    }
+
+    .pm-menu-button {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .pm-home-container {
+        padding: 1.5rem;
+    }
+
+    .pm-home-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .pm-menu {
+        padding: 2rem;
+    }
+
+    .pm-menu-button {
+        padding: 0.875rem;
+        font-size: 0.9375rem;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .pm-home-container {
+        padding: 2rem;
+    }
+
+    .pm-home-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .pm-menu {
+        padding: 2rem;
+    }
+
+    .pm-menu-button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

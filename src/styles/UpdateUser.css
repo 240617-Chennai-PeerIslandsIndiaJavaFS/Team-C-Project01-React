@@ -1,0 +1,69 @@
+.update-user-container {
+    background: #ece9e9; 
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.update-user-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.update-user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-user-label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #666;
+}
+
+.update-user-select, 
+.update-user-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.update-user-select {
+    background-color: #fafafa;
+}
+
+.update-user-input {
+    background-color: #ffffff;
+}
+
+.update-user-button {
+    background: #28a745; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease;
+}
+
+.update-user-button:hover {
+    background: #218838;
+}
+
+.update-user-container select:focus, 
+.update-user-container input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
