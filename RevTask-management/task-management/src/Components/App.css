@@ -1,0 +1,204 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f65cc3d5;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.nav-item {
+  padding: 14px 20px;
+  color: rgb(32, 9, 9);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  background-color: #ddd;
+  color: black;
+}
+
+.form-container {
+  display: none;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 1px solid #9b0946;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #f65cd5;
+  color: rgb(14, 13, 13);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-style: inherit;
+}
+
+button:hover {
+  background-color: #ac388f;
+}
+
+#user-activity {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 600px;
+  overflow-x: auto;
+}
+
+#user-activity p {
+  margin-bottom: 5px;
+  font-size: 14px;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between; /* Ensure even spacing */
+  align-items: center;
+  background-color: #f65cc3d5;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-nav-item, .logout-button {
+  padding: 14px 20px;
+  color: rgb(32, 9, 9);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-item:hover, .logout-button:hover {
+  text-decoration: underline;
+  background-color: #ddd;
+  color: black;
+}
+
+.logout-button {
+  background-color: #f65cc3d5; 
+  border: none;
+  border-radius: 4px;
+  font-size: inherit; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button.clicked {
+  background-color: red;
+  color: white;
+}
+
+#content{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.admin-form-container  {
+  width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.admin-label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.admin-input, .admin-select, .admin-button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 1px solid #9b0946;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #f65cd5;
+  color: rgb(14, 13, 13);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-style: inherit;
+}
+
+button:hover {
+  background-color: #ac388f;
+}
