@@ -1,0 +1,75 @@
+.assign-access-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assign-access-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.assign-access-form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assign-access-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.assign-access-select,
+.assign-access-input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.assign-access-select {
+    font-size: 16px;
+}
+
+.assign-access-button {
+    padding: 12px;
+    background: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.assign-access-button:hover {
+    background: #0056b3; 
+}
+
+@media (max-width: 768px) {
+    .assign-access-container {
+        padding: 15px;
+    }
+    
+    .assign-access-title {
+        font-size: 24px;
+    }
+    
+    .assign-access-input,
+    .assign-access-select {
+        font-size: 14px;
+    }
+    
+    .assign-access-button {
+        font-size: 14px;
+    }
+}
