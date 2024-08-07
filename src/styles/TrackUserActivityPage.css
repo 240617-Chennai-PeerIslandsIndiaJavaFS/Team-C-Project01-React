@@ -1,18 +1,19 @@
-#track-activity-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* #track-activity-container {
+    background-color: #acaab1;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    background: linear-gradient(to right, #f9f9f9, #e0e0e0); 
-    min-height: 100vh;
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    position: relative;
 }
 
 #track-activity-title {
-    font-size: 30px;
-    color: #2c3e50; 
+    color: #181515;
     margin-bottom: 20px;
+    font-size: 1.6em;
     text-align: center;
-    font-weight: bold;
 }
 
 #track-form-group {
@@ -32,13 +33,13 @@
 
 
 #userSelect {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #bdc3c7;
+   width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    background-color: #ecf0f1; 
-    color: #2c3e50; 
-    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
 #trackButton {
@@ -94,5 +95,108 @@
 .track-activity-card p {
     font-size: 16px;
     color: #34495e; 
+    margin: 5px 0;
+} */
+
+
+#track-activity-container {
+    background-color: #acaab1;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+#track-activity-title {
+    color: #181515;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+#track-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the items horizontally */
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#track-label {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+#userSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #ddd8d8;
+    box-sizing: border-box;
+}
+
+#trackButton {
+    font-size: 1rem;
+    background-color: #383737;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    align-self: center;  /* Center the button */
+}
+
+#trackButton:hover {
+    background-color: #2c2b2c;
+    color: #fff;
+}
+
+#trackButton:active {
+    background-color: #1f1e1f;
+}
+
+#activityContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.track-activity-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    flex: 1 1 calc(33% - 20px);
+    max-width: 320px;
+}
+
+.track-activity-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 22px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.track-activity-card p {
+    font-size: 16px;
+    color: #34495e;
     margin: 5px 0;
 }

@@ -33,7 +33,7 @@ const ProjectManagerHomePage = () => {
 
     return (
         <div className="pm-home-container">
-            <h1 className="pm-home-title">Welcome to Project Manager, {username}</h1>
+            <h1 className="pm-home-title">Welcome Project Manager, {username}</h1>
             <ul className="pm-menu">
                 <li className="pm-menu-item">
                     <button 

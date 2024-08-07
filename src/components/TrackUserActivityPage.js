@@ -50,8 +50,8 @@ const TrackUserActivityPage = () => {
                         </option>
                     ))}
                 </select>
+                <button id="trackButton" onClick={handleTrack}>Track</button>
             </div>
-            <button id="trackButton" onClick={handleTrack}>Track</button>
             <div id="activityContainer">
                 {userActivities.length > 0 ? (
                     userActivities.map((activity, index) => (
@@ -66,7 +66,7 @@ const TrackUserActivityPage = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No activities to display.</p>
+                    <p>Select User to display activity</p>
                 )}
             </div>
         </div>

@@ -1,7 +1,7 @@
 .deactivate-user-container {
-    background: #fff; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #acaab1;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 500px;
     margin: 30px auto;
@@ -10,7 +10,7 @@
 }
 
 .deactivate-user-title {
-    color: #333;
+    color: #181515;
     margin-bottom: 20px;
     font-size: 1.6em;
     text-align: center;
@@ -19,12 +19,17 @@
 .deactivate-user-form {
     display: flex;
     flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .deactivate-user-label {
+    font-size: 1.1rem;
     margin: 10px 0 5px;
     font-weight: bold;
-    color: #555;
+    color: #0f0f0f;
 }
 
 .deactivate-user-select, 
@@ -32,36 +37,38 @@
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 6px;
     margin-bottom: 15px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-sizing: border-box;
 }
 
 .deactivate-user-select {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 .deactivate-user-button {
-    background: #dc3545;
+    font-size: 1rem;
+    background-color: #d82626;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 0.75rem;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1.1em;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .deactivate-user-button:hover {
-    background: #c82333; 
+    background-color: #e92d2d;  
+    color: #fff; 
 }
 
 .deactivate-user-container select:focus, 
 .deactivate-user-container input:focus {
-    border-color: #dc3545;
+    background-color: #ffffff;
     outline: none;
-    box-shadow: 0 0 5px rgba(220, 53, 69, 0.3);
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
 }
 
 @media (max-width: 600px) {
