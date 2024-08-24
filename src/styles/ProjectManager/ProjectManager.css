@@ -1,0 +1,156 @@
+.pm-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pm-navbar {
+    display: flex;
+    font-size: 1.095rem;
+    font-weight: 400;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.pm-nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+}
+
+.pm-nav-item:hover {
+    text-decoration: underline;
+}
+
+.pm-logout-button {
+    background-color: #f44336;
+    font-size: 1.03rem;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.pm-logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.pm-content {
+    flex: 1;
+    padding: 2rem;
+}
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .pm-navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .pm-nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .pm-logout-button {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .pm-content {
+        padding: 1rem;
+    }
+
+    #message-title {
+        font-size: 1.5rem;
+    }
+
+    .project-name {
+        font-size: 1.2rem;
+    }
+
+    .message-item-header {
+        font-size: 0.9rem;
+    }
+
+    .message-body {
+        font-size: 0.9rem;
+    }
+}
+/* Tablets (Portrait and Landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .pm-navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.75rem;
+    }
+
+    .pm-nav-item {
+        margin: 0.5rem 0.75rem;
+    }
+
+    .pm-logout-button {
+        margin: 0.5rem 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .pm-content {
+        padding: 1.5rem;
+    }
+
+    #message-title {
+        font-size: 1.75rem;
+    }
+
+    .project-name {
+        font-size: 1.5rem;
+    }
+
+    .message-item-header {
+        font-size: 1rem;
+    }
+
+    .message-body {
+        font-size: 1rem;
+    }
+}
+/* Desktops and larger screens */
+@media (min-width: 1025px) {
+    .pm-navbar {
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+
+    .pm-nav-item {
+        margin: 0.5rem 1rem;
+    }
+
+    .pm-logout-button {
+        margin: 0.5rem 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .pm-content {
+        padding: 2rem;
+    }
+
+    #message-title {
+        font-size: 2rem;
+    }
+
+    .project-name {
+        font-size: 1.75rem;
+    }
+
+    .message-item-header {
+        font-size: 1.1rem;
+    }
+
+    .message-body {
+        font-size: 1.1rem;
+    }
+}
