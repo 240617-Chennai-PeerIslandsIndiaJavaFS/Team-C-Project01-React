@@ -1,0 +1,92 @@
+.tm-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.tm-navbar {
+    display: flex;
+    justify-content: space-between; /* Space between left and right aligned items */
+    align-items: center; /* Vertically align items */
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.tm-navbar-left,
+.tm-navbar-right {
+    display: flex;
+}
+
+.tm-navbar-left {
+    flex: 1; /* Take up available space on the left */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.tm-navbar-right {
+    flex: 1; /* Take up available space on the right */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.tm-nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+}
+
+.tm-nav-item:hover {
+    text-decoration: underline;
+}
+
+.tm-logout-button {
+    background-color: #f44336;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+}
+
+.tm-logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.tm-content {
+    flex: 1;
+    padding: 2rem;
+}
+@media (max-width: 600px) {
+    .tm-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tm-nav-item, .tm-logout-button {
+        margin: 0.5rem 0;
+    }
+
+    .tm-content {
+        padding: 1rem;
+    }
+}
+
+/* Tablets (Portrait and Landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .tm-navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Adjust for tablets */
+        padding: 0.5rem 1rem;
+    }
+
+    .tm-nav-item, .tm-logout-button {
+        margin: 0.5rem 0.5rem;
+    }
+
+    .tm-content {
+        padding: 1.5rem;
+    }
+}
+
